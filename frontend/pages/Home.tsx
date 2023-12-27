@@ -8,6 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "frontend/components/ui/card"
+import Navbar from '../reusable/navbar'
 import { Input } from "frontend/components/ui/input"
 import { Label } from "frontend/components/ui/label"
 import {
@@ -17,11 +18,14 @@ import {
   SelectTrigger,
   SelectValue,
 } from "frontend/components/ui/select"
-import Navbar from '../reusable/navbar'
+import Hero from '../components/hero'
+import Subhero from '../components/subhero'
 export default function Home() {
     return (
         <div>
-        <Navbar />
+        <Navbar></Navbar> 
+        <Hero></Hero>
+        <Subhero></Subhero>
         <Card className="w-[350px]  mx-auto">
           <CardHeader>
             <CardTitle>Create project</CardTitle>
